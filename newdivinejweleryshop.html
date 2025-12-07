@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Divine Jewellery</title>
+  <link rel="stylesheet" href="jwelery.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>The Divine Jewellery</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#collection">Collection</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#orders">Orders</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="section fade-in">
+    <h2>Welcome to The Divine Jewellery</h2>
+    <p>Experience timeless beauty with our premium collection of gold, silver, and diamond jewellery.</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section alt fade-in">
+    <h2>About Us</h2>
+    <p>Founded with passion and craftsmanship, The Divine Jewellery brings elegance and luxury to every occasion. 
+    Our artisans create timeless pieces that reflect tradition with a modern touch.</p>
+  </section>
+
+  <!-- Collection Section -->
+  <section id="collection" class="section fade-in">
+    <h2>Our Collection</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://www.rnarayanjewellers.com/cdn/shop/files/Nidhi-traditional-22kt-antique-gold-polki-flower-motif-pendant-necklace-set-online-india-1_2048x.jpg?v=1703124213" alt="Gold Necklace">
+        <h3>Gold Necklace</h3>
+        <p>Elegant 22k design</p>
+        <span class="price">₹25,000</span>
+      </div>
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/61m6oevU6nL._UY1100_.jpg" alt="Diamond Ring">
+        <h3>Diamond Ring</h3>
+        <p>Premium solitaire cut</p>
+        <span class="price">₹75,000</span>
+      </div>
+      <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_pe7SHTZlcLcm27B8IXUfJY3EtkxIFbTg1A&s" alt="Silver Bracelet">
+        <h3>Silver Bracelet</h3>
+        <p>Classic daily wear</p>
+        <span class="price">₹4,500</span>
+      </div>
+      <div class="product">
+        <img src="https://thefuncompany.in/cdn/shop/files/WhatsAppImage2025-01-31at04.00.14.jpg?v=1743960592" alt="Gold Earrings">
+        <h3>Gold Earrings</h3>
+        <p>Traditional touch</p>
+        <span class="price">₹12,000</span>
+      </div>
+      <div class="product">
+        <img src="https://i.pinimg.com/736x/8a/96/33/8a96332d0d772a9b6366ddaccdfc5e03.jpg" alt="Stud Earrings">
+        <h3>Stud Bracelet</h3>
+        <p>Elegant diamond bracelet</p>
+        <span class="price">₹10,000</span>
+    </div>
+      <div class="product">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2023/8/332554347/RW/CX/ZG/161854552/whatsapp-image-2023-08-06-at-10-19-30-am-500x500.jpeg" alt="Stud Earrings">
+        <h3>Stud Diamond</h3>
+        <p>Diamond Watch</p>
+        <span class="price">₹15,000</span>
+      </div>
+      <div class="product">
+        <img src="https://shaadiwish.com/blog/wp-content/uploads/2023/04/Diamond-3-2.jpg" alt="Diamond Saree">
+        <h3>Stud Diamond Saree</h3>
+        <p>Diamond Saree</p>
+        <span class="price">₹5,000</span>
+      </div>
+       <div class="product">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2024/1/376427729/ZR/FG/LD/87896904/fcc7750d-807b-4dbf-827f-b091875638f4-500x500.jpeg" alt="Golden Mangtika">
+        <h3>Stud Diamond Saree</h3>
+        <p>Golden Mangtika</p>
+        <span class="price">₹18,000</span>
+      </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section id="reviews" class="section alt fade-in">
+    <h2>What Our Customers Say</h2>
+    <div class="reviews">
+      <p>"Absolutely loved the quality of the necklace! Worth every penny." – Priya</p>
+      <p>"The diamond ring was stunning. Great service too!" – Rahul</p>
+      <p>"Simple yet classy bracelet, highly recommend." – Neha</p>
+    </div>
+  </section>
+
+  <!-- Orders Section -->
+  <section id="orders" class="section fade-in">
+    <h2>Place Your Order</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required><br><br>
+      <input type="email" placeholder="Your Email" required><br><br>
+      <input type="text" placeholder="Product Name" required><br><br>
+      <button class="order-btn" type="submit">Submit Order</button>
+    </form>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section alt fade-in">
+    <h2>Contact Us</h2>
+    <p>Email: support@divinejewellery.com</p>
+    <p>JWELERY SELLOR NAME: SACHIN KUMAR</p>
+    <p>Phone: +91-8809608350</p>
+    <p>Address: Navi Mumbai, Maharastra, India</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 The Divine Jewellery. All Rights Reserved.
+  </footer>
+
+  <!-- Scroll Animation Script -->
+  <script>
+    const faders = document.querySelectorAll('.fade-in');
+    const options = { threshold: 0.2 };
+
+    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      });
+    }, options);
+
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+
+  </script>
+</body>
+</html>
